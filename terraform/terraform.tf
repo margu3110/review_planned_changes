@@ -1,11 +1,11 @@
-# terraform {
-#   backend "s3" {
-#     bucket  = "tf-state-backend-atlas-test-00001"
-#     key     = "atlas-test.tfstate"
-#     region  = "us-east-1"
-#     encrypt = true
-#   }
-# }
+terraform {
+  backend "s3" {
+    bucket  = "tf-state-backend-atlas-test-00001"
+    key     = "atlas-test.tfstate"
+    region  = "us-east-1"
+    encrypt = true
+  }
+}
 
 terraform {
   required_version = "~> 1.5"
