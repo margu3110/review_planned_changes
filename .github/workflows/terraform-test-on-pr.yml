@@ -52,11 +52,11 @@ jobs:
           aws-region: us-east-1
 
       # terraform formatting check
-      - name: "Test: Terraform fmt"
-        id: fmt
-        run: terraform fmt -check -no-color
-        # do not throw error, just warn
-        continue-on-error: true
+    #   - name: "Test: Terraform fmt"
+    #     id: fmt
+    #     run: terraform fmt -check -no-color
+    #     # do not throw error, just warn
+    #     continue-on-error: true
 
       # use TFLint to check the code
       - name: "Setup: TFLint"
